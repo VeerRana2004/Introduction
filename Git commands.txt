@@ -1,0 +1,181 @@
+
+ADMIN@DESKTOP-8QQ6H92 MINGW64 ~/Desktop/VEER
+$ git init
+Initialized empty Git repository in C:/Users/ADMIN/Desktop/VEER/.git/
+
+ADMIN@DESKTOP-8QQ6H92 MINGW64 ~/Desktop/VEER (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        xyz.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ADMIN@DESKTOP-8QQ6H92 MINGW64 ~/Desktop/VEER (master)
+$ git add xyz.txt
+
+ADMIN@DESKTOP-8QQ6H92 MINGW64 ~/Desktop/VEER (master)
+$ git config --global user.name "VeerRana2004"
+
+ADMIN@DESKTOP-8QQ6H92 MINGW64 ~/Desktop/VEER (master)
+$ git config --global user.email "22ce109@charusat.edu.in"
+
+ADMIN@DESKTOP-8QQ6H92 MINGW64 ~/Desktop/VEER (master)
+$ git commit -m "Veer Introduction"
+[master (root-commit) 01610e9] Veer Introduction
+ 1 file changed, 2 insertions(+)
+ create mode 100644 xyz.txt
+
+ADMIN@DESKTOP-8QQ6H92 MINGW64 ~/Desktop/VEER (master)
+$ git log
+commit 01610e9d9985f883640b3a0b716368624b52dbe2 (HEAD -> master)
+Author: VeerRana2004 <22ce109@charusat.edu.in>
+Date:   Wed Aug 9 15:00:46 2023 +0530
+
+    Veer Introduction
+
+ADMIN@DESKTOP-8QQ6H92 MINGW64 ~/Desktop/VEER (master)
+$ git add Helloworld.cpp
+
+ADMIN@DESKTOP-8QQ6H92 MINGW64 ~/Desktop/VEER (master)
+$ git commit -m "cpp file"
+[master 4c4bb2f] cpp file
+ 1 file changed, 6 insertions(+)
+ create mode 100644 Helloworld.cpp
+
+ADMIN@DESKTOP-8QQ6H92 MINGW64 ~/Desktop/VEER (master)
+$ git log
+commit 4c4bb2f326a1132f34f1caa1ef74ea2ef18942da (HEAD -> master)
+Author: VeerRana2004 <22ce109@charusat.edu.in>
+Date:   Wed Aug 9 15:09:28 2023 +0530
+
+    cpp file
+
+commit 01610e9d9985f883640b3a0b716368624b52dbe2
+Author: VeerRana2004 <22ce109@charusat.edu.in>
+Date:   Wed Aug 9 15:00:46 2023 +0530
+
+    Veer Introduction
+
+ADMIN@DESKTOP-8QQ6H92 MINGW64 ~/Desktop/VEER (master)
+$ git add .
+
+ADMIN@DESKTOP-8QQ6H92 MINGW64 ~/Desktop/VEER (master)
+$ git commit -m "All files"
+On branch master
+nothing to commit, working tree clean
+
+ADMIN@DESKTOP-8QQ6H92 MINGW64 ~/Desktop/VEER (master)
+$ git diff
+diff --git a/Helloworld.cpp b/Helloworld.cpp
+index 7338ac8..b723383 100644
+--- a/Helloworld.cpp
++++ b/Helloworld.cpp
+@@ -2,5 +2,6 @@
+ using namespace std;
+ int main(){
+     cout<<"hello world";
++    cout<<"I am Veer Rana";
+     return 0;
+ }
+\ No newline at end of file
+
+ADMIN@DESKTOP-8QQ6H92 MINGW64 ~/Desktop/VEER (master)
+$ git add .
+
+ADMIN@DESKTOP-8QQ6H92 MINGW64 ~/Desktop/VEER (master)
+$ git commit -m "content added"
+[master c572061] content added
+ 1 file changed, 1 insertion(+)
+
+ADMIN@DESKTOP-8QQ6H92 MINGW64 ~/Desktop/VEER (master)
+$ git diff
+diff --git a/xyz.txt b/xyz.txt
+index c2e4117..6671fd4 100644
+--- a/xyz.txt
++++ b/xyz.txt
+@@ -1,2 +1,3 @@
+ My name is Veer Rana.
+-I am student of C.E.(charust)
+\ No newline at end of file
++I am student of C.E.(charust);
++VEER
+\ No newline at end of file
+
+ADMIN@DESKTOP-8QQ6H92 MINGW64 ~/Desktop/VEER (master)
+$ git diff
+diff --git a/Helloworld.cpp b/Helloworld.cpp
+index b723383..39f6ac7 100644
+--- a/Helloworld.cpp
++++ b/Helloworld.cpp
+@@ -2,6 +2,6 @@
+ using namespace std;
+ int main(){
+     cout<<"hello world";
+-    cout<<"I am Veer Rana";
++    cout<<"I am Veer Rana 2004";
+     return 0;
+ }
+\ No newline at end of file
+diff --git a/xyz.txt b/xyz.txt
+index c2e4117..6671fd4 100644
+--- a/xyz.txt
++++ b/xyz.txt
+@@ -1,2 +1,3 @@
+ My name is Veer Rana.
+-I am student of C.E.(charust)
+\ No newline at end of file
++I am student of C.E.(charust);
++VEER
+\ No newline at end of file
+
+ADMIN@DESKTOP-8QQ6H92 MINGW64 ~/Desktop/VEER (master)
+$ git add .
+
+ADMIN@DESKTOP-8QQ6H92 MINGW64 ~/Desktop/VEER (master)
+$ git commit -m "Added"
+[master 24fcf29] Added
+ 2 files changed, 3 insertions(+), 2 deletions(-)
+
+ADMIN@DESKTOP-8QQ6H92 MINGW64 ~/Desktop/VEER (master)
+$ git log -1
+commit 24fcf2972ff1a3caa36a8a21cbc677d4912382d0 (HEAD -> master)
+Author: VeerRana2004 <22ce109@charusat.edu.in>
+Date:   Wed Aug 9 15:30:00 2023 +0530
+
+    Added
+
+ADMIN@DESKTOP-8QQ6H92 MINGW64 ~/Desktop/VEER (master)
+$ git branch -M main
+
+ADMIN@DESKTOP-8QQ6H92 MINGW64 ~/Desktop/VEER (main)
+$ git remote add
+.git/           Helloworld.cpp  xyz.txt
+
+ADMIN@DESKTOP-8QQ6H92 MINGW64 ~/Desktop/VEER (main)
+$ git remote add origin https://github.com/VeerRana2004/Introduction.git
+
+ADMIN@DESKTOP-8QQ6H92 MINGW64 ~/Desktop/VEER (main)
+$ git push -u origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/VeerRana2004/Introduction.git'
+
+ADMIN@DESKTOP-8QQ6H92 MINGW64 ~/Desktop/VEER (main)
+$ git push -u origin main
+Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (13/13), 1.16 KiB | 295.00 KiB/s, done.
+Total 13 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), done.
+To https://github.com/VeerRana2004/Introduction.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+ADMIN@DESKTOP-8QQ6H92 MINGW64 ~/Desktop/VEER (main)
+$
